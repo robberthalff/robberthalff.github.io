@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter on RobbertHalff</title>
+    <link>/categories/flutter/</link>
+    <description>Recent content in Flutter on RobbertHalff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/flutter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>@Validations</title>
+      <link>/blog/getting_started_with_validations/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/getting_started_with_validations/</guid>
+      <description>Validations is a validation library for Dart and Flutter using annotations, which allows you to concisely define validations for your models.
+It&amp;rsquo;s inspired by the JSR380 Bean Validation specification for Java. some parts of the specification have not been implemented yet though or make less sense for validations written in Dart.
+There are several ways in which the validations can be used. The library is tailored to work well with flutter form validation, but the annotations are equally valuable for model validation.</description>
+    </item>
+    
+  </channel>
+</rss>
