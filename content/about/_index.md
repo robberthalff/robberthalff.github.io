@@ -14,9 +14,5 @@ Regarding frontend frameworks I mostly use:
 
 I am also developing in [Dart](https://dart.dev) and [Flutter](https://flutter.dev).
 
-I find it hard to define what I do in concrete terms.
-
 As development in general is very versatile and each project is different
 with it's own special requirements.
-
-Thanks for reading!
