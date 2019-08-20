@@ -2,17 +2,17 @@ language: python
 
 env:
   global:
-    - USER="rhalff"
     - ORGANIZATION="robberthalff"
     - EMAIL="deploy@travis-ci.org"
     - DEPLOYMENT_USER="traviscibot"
+    - SOURCE_REPO="github.com/${ORGANIZATION}/robberthalff.git"
     - REPO="${ORGANIZATION}.github.io"
     - FILES="./public/*"
     - GH_REPO="github.com/${ORGANIZATION}/${REPO}.git"
 
 after_success:
   - MESSAGE=$(git log -1 --pretty=%B)
-  - git clone git://${GH_REPO}
+  - git clone git://${SOURCE_REPO}
   - cd ${REPO}
   - rm -rf `ls | grep -v 'md$' | grep -v '.git' | grep -v 'CNAME'`
   - cp -f -r ../${FILES} ./
