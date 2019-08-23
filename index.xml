@@ -6,10 +6,22 @@
     <description>Recent content on RobbertHalff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flutter Examples in Hugo</title>
+      <link>/blog/adding_flutter_examples_to_hugo/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/adding_flutter_examples_to_hugo/</guid>
+      <description>This article explains how to show flutter examples on your hugo powered site using a simple iframe shortcode.
+Step 1: Install the flutter_web build tools First install the webdev package which provides the build tools for Flutter for web:
+$ flutter pub global activate webdev  Ensure that the $HOME/.pub-cache/bin directory is in your path, and then you may use the webdev command directly from your terminal.
+Step 2: Adding the flutter web repository as submodule Add the Flutter Web Repository as a submodule to your site&amp;rsquo;s git repository:</description>
+    </item>
     
     <item>
       <title>@Validations</title>
