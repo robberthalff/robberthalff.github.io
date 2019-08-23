@@ -24,7 +24,7 @@
         "datePublished": "2019-08-22 00:00:00 \x2b0000 UTC",
         "dateModified" : "2019-08-22 00:00:00 \x2b0000 UTC",
         "url" : "\/blog\/adding_flutter_examples_to_hugo\/",
-        "wordCount" : "660",
+        "wordCount" : "662",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-08-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-08-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="660">
+<meta itemprop="wordCount" content="662">
 
 
 
@@ -296,7 +296,7 @@
         
 
         <a href="/blog/getting_started_with_validations/" class="image featured">
-            <img src="/img/2019/082019/08/pic01.jpg" alt="">
+            <img src="/img/2019/08/pic01.jpg" alt="">
         </a>
     
 
@@ -516,7 +516,7 @@ and then you may use the <code>webdev</code> command directly from your terminal
 
 <h3 id="step-2-adding-the-flutter-web-repository-as-submodule">Step 2: Adding the flutter web repository as submodule</h3>
 
-<p>Add the <a href="`git@github.com:flutter/flutter_web.git`">Flutter Web Repository</a> as a submodule to your site&rsquo;s git repository:</p>
+<p>Add the <a href="https://github.com/flutter/flutter_web">Flutter Web Repository</a> as a submodule to your site&rsquo;s git repository:</p>
 
 <pre><code class="language-bash">git submodule add git@github.com:flutter/flutter_web.git
 </code></pre>
@@ -566,7 +566,7 @@ navigate to <code>https://127.0.0.1:8080</code>.</p>
 
 <p>This will create a build directory with an <code>index.html</code> file and a <code>main.dart.js</code>.</p>
 
-<p>Next just move both of these file files to the static directory of your <a href="https://gohugo.io">hugo</a> installation:</p>
+<p>Next just move both of these files to the static directory of your <a href="https://gohugo.io">hugo</a> installation:</p>
 
 <p>e.g.</p>
 
@@ -591,7 +591,7 @@ to also commit the build/ directory.</p>
 
 <p>In order to integrate this example into the site we can make a simple iframe <a href="https://gohugo.io/content-management/shortcodes">shortcode</a>.</p>
 
-<p>To do so paste the following code into a file named <code>iframe.html</code> in the <em>shortcodes</em> directory:</p>
+<p>To do so paste the following code into a file named <em>iframe.html</em> in the <em>shortcodes</em> directory:</p>
 
 <p><strong>themes/[your-theme]/layouts/shortcodes/iframe.html</strong>:</p>
 
@@ -621,7 +621,7 @@ to also commit the build/ directory.</p>
 </code></pre>
 
 <p>This css will have to be loaded in the header of your site.
-In the case of my theme this can be found in <code>header.html</code>.</p>
+For the theme I&rsquo;m currently using this can be found in <code>header.html</code>.</p>
 
 <p>Add something like the following to load the css:</p>
 
@@ -645,12 +645,11 @@ In the case of my theme this can be found in <code>header.html</code>.</p>
 
 <h3 id="step-4-missing-fontmanifest-json">Step 4: Missing FontManifest.json</h3>
 
-<p>When you serve the example you&rsquo;ll notice that <code>main.dart.js</code> will try to load a <code>FontManifest.json</code> even though the example itself is not using any fonts or icons.</p>
+<p>When you serve the example you might notice that <code>main.dart.js</code> will try to load a <code>FontManifest.json</code> even though the example itself is not using any fonts or icons.
+In order to make this file available you must create it manually.
+It&rsquo;s contents will depend on which fonts your flutter example is using.</p>
 
-<p>In order to make this file available you must create it manually.</p>
-
-<p>It contents depends on which fonts your application is using.
-A good default would be:</p>
+<p>A good default would be:</p>
 
 <pre><code class="language-json">[
   {
