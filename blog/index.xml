@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on RobbertHalff</title>
-    <link>/blog/</link>
+    <link>https://robberthalff.com/blog/</link>
     <description>Recent content in Blog on RobbertHalff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robberthalff.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Flutter Examples in Hugo</title>
-      <link>/blog/adding_flutter_examples_to_hugo/</link>
+      <link>https://robberthalff.com/blog/adding_flutter_examples_to_hugo/</link>
       <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/adding_flutter_examples_to_hugo/</guid>
+      <guid>https://robberthalff.com/blog/adding_flutter_examples_to_hugo/</guid>
       <description>This article explains how to show flutter examples on your hugo powered site using a simple iframe shortcode.
 Step 1: Install the flutter_web build tools First install the webdev package which provides the build tools for Flutter for web:
 $ flutter pub global activate webdev  Ensure that the $HOME/.pub-cache/bin directory is in your path, and then you may use the webdev command directly from your terminal.
@@ -25,10 +25,10 @@ Step 2: Adding the flutter web repository as submodule Add the Flutter Web Repos
     
     <item>
       <title>@Validations</title>
-      <link>/blog/getting_started_with_validations/</link>
+      <link>https://robberthalff.com/blog/getting_started_with_validations/</link>
       <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/getting_started_with_validations/</guid>
+      <guid>https://robberthalff.com/blog/getting_started_with_validations/</guid>
       <description>Validations is a validation library for Dart and Flutter using annotations, which allows you to concisely define validations for your models.
 It&amp;rsquo;s inspired by the JSR380 Bean Validation specification for Java. some parts of the specification have not been implemented yet though or make less sense for validations written in Dart.
 There are several ways in which the validations can be used. The library is tailored to work well with flutter form validation, but the annotations are equally valuable for model validation.</description>

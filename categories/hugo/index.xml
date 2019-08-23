@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on RobbertHalff</title>
-    <link>/categories/hugo/</link>
+    <link>https://robberthalff.com/categories/hugo/</link>
     <description>Recent content in Hugo on RobbertHalff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robberthalff.com/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Flutter Examples in Hugo</title>
-      <link>/blog/adding_flutter_examples_to_hugo/</link>
+      <link>https://robberthalff.com/blog/adding_flutter_examples_to_hugo/</link>
       <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/adding_flutter_examples_to_hugo/</guid>
+      <guid>https://robberthalff.com/blog/adding_flutter_examples_to_hugo/</guid>
       <description>This article explains how to show flutter examples on your hugo powered site using a simple iframe shortcode.
 Step 1: Install the flutter_web build tools First install the webdev package which provides the build tools for Flutter for web:
 $ flutter pub global activate webdev  Ensure that the $HOME/.pub-cache/bin directory is in your path, and then you may use the webdev command directly from your terminal.
