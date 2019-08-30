@@ -24,7 +24,7 @@
         "datePublished": "2019-08-08 00:00:00 \x2b0000 UTC",
         "dateModified" : "2019-08-08 00:00:00 \x2b0000 UTC",
         "url" : "https:\/\/robberthalff.com\/blog\/getting_started_with_validations\/",
-        "wordCount" : "1101",
+        "wordCount" : "978",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-08-08T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-08-08T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1101">
+<meta itemprop="wordCount" content="978">
 
 
 
@@ -298,7 +298,7 @@
         
 
         <a href="https://robberthalff.com/blog/getting_started_with_validations/" class="image featured">
-            <img src="https://robberthalff.com/img/2019/082019/08/pic01.jpg" alt="">
+            <img src="https://robberthalff.com/img/2019/08/pic01.jpg" alt="">
         </a>
     
 
@@ -405,7 +405,7 @@
             August 8, 2019</time>
         <span class="author">Robbert Halff</span>
         
-            <p>6 minute read</p>
+            <p>5 minute read</p>
         
         
     </div>
@@ -568,28 +568,9 @@ import &lsquo;package:validations/validations.dart&rsquo;;</p>
 
 <p>part &lsquo;car.g.dart&rsquo;;</p>
 
-<p>class Driver {
-  Driver({this.name});
-  @NotNull()
-  String name;
-}</p>
-
-<p>@FieldMatch(
-  baseField: &lsquo;frontWheelCoverLeft&rsquo;,
-  matchField: &lsquo;frontWheelCoverRight&rsquo;,
-  baseFieldMessage: r&rsquo;Left and Right front wheel covers should match!&lsquo;,
-)
-@FieldMatch(
-  baseField: &lsquo;rearWheelCoverLeft&rsquo;,
-  matchField: &lsquo;rearWheelCoverRight&rsquo;,
-  matchFieldMessage: r&rsquo;Left and Right rear wheel covers should match!&lsquo;,
-)
-class Car {
+<p>class Car {
   @NotNull()
   String manufacturer;</p>
-
-<p>@Valid(message: &lsquo;There should be a valid driver!&rsquo;)
-  Driver driver;</p>
 
 <p>@Size(
     min: 2,
@@ -614,46 +595,11 @@ class Car {
     value: 350,
     message: r&rsquo;The top speed $validatedValue is higher than $value&rsquo;,
   )
-  int topSpeed;</p>
-
-<p>@NotEmpty()
-  String frontWheelCoverLeft;
-  @NotEmpty()
-  String frontWheelCoverRight;
-  @NotEmpty()
-  String rearWheelCoverLeft;
-  @NotEmpty()
-  String rearWheelCoverRight;</p>
-
-<p>// Validations are declared in GenValidator
-  Decimal price;</p>
-
-<p>// Validations are declared in GenValidator
-  bool isRegistered;
+  int topSpeed;
 }</p>
 
-<p>@GenValidator(
-  fields: {
-    &lsquo;price&rsquo;: [
-      DecimalMax(
-        value: &lsquo;100.00&rsquo;,
-        message: r&rsquo;Price must not be higher than $value&rsquo;,
-      ),
-      DecimalMin(
-        value: &lsquo;49.99&rsquo;,
-        message: r&rsquo;Price must not be lower than $value&rsquo;,
-      ),
-    ],
-    &lsquo;isRegistered&rsquo;: [
-      IsTrue(message: &lsquo;Car must be registered!&rsquo;),
-    ],
-  },
-)
-class TestCarValidator extends Validator&lt;Car&gt; with _$TestCarValidator {}</p>
-
 <p>@GenValidator()
-class TestDriverValidator extends Validator&lt;Driver&gt; with _$TestDriverValidator {
-}
+class TestCarValidator extends Validator&lt;Car&gt; with _$TestCarValidator {}
 </code></pre></p>
 
 <p></div>
