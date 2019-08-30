@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" />
-    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-
-    <style>
-     * {
+<!DOCTYPE html><html><head><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script><link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"><link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><style>* {
          -moz-box-sizing:border-box;
          -webkit-box-sizing:border-box;
          box-sizing:border-box;
@@ -67,10 +57,7 @@
      }
      .clearfix:after {
          clear: both;
-     }
-    </style>
-    <style>
-  .plain.error-page-wrapper {
+     }</style><style>.plain.error-page-wrapper {
     font-family: 'Source Sans Pro', sans-serif;
     background-color:#6355bc;
     padding:0 5%;
@@ -180,11 +167,7 @@
     .plain.error-page-wrapper .buttons-container a:first-child {
       margin-right:10%;
     }
-  }
-</style>
-    <style>
-
-    .background-color {
+  }</style><style>.background-color {
       background-color: rgba(244, 244, 244, 1) !important;
     }
 
@@ -220,36 +203,7 @@
 
     .shadow {
       box-shadow: 0 0 60px #000000;
-    }
-
-</style>
-  </head>
-  <body class="plain error-page-wrapper background-color background-image">
-    <div class="content-container">
-	<div class="head-line secondary-text-color">
-		404
-	</div>
-	<div class="subheader primary-text-color">
-		Oops, the page you're <br>
-		looking for does not exist.
-	</div>
-	<hr>
-	<div class="clearfix"></div>
-	<div class="context primary-text-color">
-		
-    <p>
-      You may want to head back to the homepage.<br />
-      If you think something is broken, report a problem.
-    </p>
-	</div>
-	<div class="buttons-container">
-		<a class="border-button" href="https://robberthalff.com/">Go To Homepage</a>
-		<a class="border-button" href="mailto:">Report A Problem</a>
-	</div>
-</div>
-
-    <script>
-     function ErrorPage(container, pageType, templateName) {
+    }</style></head><body class="plain error-page-wrapper background-color background-image"><div class="content-container"><div class="head-line secondary-text-color">404</div><div class="subheader primary-text-color">Oops, the page you're<br>looking for does not exist.</div><hr><div class="clearfix"></div><div class="context primary-text-color"><p>You may want to head back to the homepage.<br>If you think something is broken, report a problem.</p></div><div class="buttons-container"><a class="border-button" href="https://robberthalff.com/">Go To Homepage</a> <a class="border-button" href="mailto:">Report A Problem</a></div></div><script>function ErrorPage(container, pageType, templateName) {
        this.$container = $(container);
        this.$contentContainer = this.$container.find(templateName == 'sign' ? '.sign-container' : '.content-container');
        this.pageType = pageType;
@@ -358,10 +312,4 @@
      
      $(window).on('resize', function() {
        $('body').trigger('resize')
-     });
-
-    </script>
-
-
-  </body>
-</html>
+     });</script></body></html>
